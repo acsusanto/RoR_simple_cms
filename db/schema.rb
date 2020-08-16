@@ -12,26 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_08_08_141226) do
 
-  create_table "pages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.bigint "subject_id"
-    t.string "name"
-    t.string "permalink"
-    t.integer "position"
-    t.boolean "visible"
-    t.text "content"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["subject_id"], name: "index_pages_on_subject_id"
-  end
-
-  create_table "subjects", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "name"
-    t.integer "position"
-    t.boolean "visible"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "first_name", limit: 25
     t.string "last_name", limit: 50
