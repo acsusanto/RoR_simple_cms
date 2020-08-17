@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_08_09_122543) do
 
-
   create_table "admin_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "first_name", limit: 25
     t.string "last_name", limit: 50
@@ -52,7 +51,6 @@ ActiveRecord::Schema.define(version: 2020_08_09_122543) do
     t.string "name"
     t.integer "position"
     t.boolean "visible", default: false
->>>>>>> 90a21bd9c2a86e2f59b402d4ab6dafcc84c7f225
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
