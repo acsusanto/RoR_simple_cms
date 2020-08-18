@@ -1,6 +1,6 @@
-class CreateAdminusersPages < ActiveRecord::Migration[6.0]
+class CreateAdminUsersPages < ActiveRecord::Migration[6.0]
   def change
-    create_table :adminusers_pages do |t|
+    create_table :admin_users_pages do |t|
     end
   end
 end

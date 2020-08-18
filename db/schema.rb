@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_08_17_103556) do
     t.index ["username"], name: "index_admin_users_on_username"
   end
 
-  create_table "adminusers_pages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "admin_users_pages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
   end
 
   create_table "pages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
