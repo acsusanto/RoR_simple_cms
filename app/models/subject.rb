@@ -1,5 +1,6 @@
 class Subject < ApplicationRecord
 
+    #Adding a link to the pages.
     has_many :pages
 
     scope :visible, lambda { where(:visible => true) }
